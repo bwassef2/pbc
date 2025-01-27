@@ -107,6 +107,6 @@ for set1, set2 in zip(groups["Faces"]["DD-primeC-primeC"], groups["Faces"]["AA-p
     mdb.models['Model-1'].Equation(name='Constraint-{}'.format(constraint_id), terms=((1.0, set1, 2), (-1.0, set2, 2)))
     constraint_id += 1
     mdb.models['Model-1'].Equation(name='Constraint-{}'.format(constraint_id), terms=((1.0, set1, 3), (-1.0, set2, 3)))
-    constraint_id += 0
+    constraint_id += 1
 
 
