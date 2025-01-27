@@ -1,0 +1,33 @@
+
+**Periodic Boundary Conditions Automation in Abaqus**
+
+**Overview**  
+This script automates the application of periodic boundary conditions (PBCs) to a cubic model in Abaqus. It is designed to simplify the setup of boundary conditions for simulations involving representative volume elements (RVEs) or homogenization studies.
+
+**Features**  
+- Automatically detects cube geometry and mesh.  
+- Applies periodic boundary conditions to opposing faces of the cube.  
+- Handles displacement and rotational degrees of freedom.  
+- Configurable for cubes of different dimensions.  
+- Generates a summary of applied constraints.
+
+**Usage Instructions**  
+1. Open Abaqus/CAE and ensure your model is loaded.  
+2. Place this script in the working directory.  
+3. Execute the script using the Abaqus Python interpreter:
+   ```
+   abaqus python <script_name>.py
+   ```
+4. Follow the prompts to input the required details about your model.  
+
+**Requirements**  
+- Abaqus/CAE with Python scripting support.  
+- A cubic model with a properly defined mesh.  
+
+**Limitations**  
+- The script assumes a structured cube mesh.  
+- Only supports cubic geometries (no arbitrary shapes).  
+
+**Notes**  
+- Review the applied constraints after running the script to confirm accuracy.  
+- Ensure the model’s geometry and mesh follow standard conventions for periodic boundary conditions.  
